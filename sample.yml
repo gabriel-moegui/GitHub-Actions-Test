@@ -6,9 +6,9 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello World"
+      - name: echo una cadena
+        run: echo "Hola Moegui"
       - name: multiline script
         run: |
-          node -v
-          npm -v
+          echo ${{GITHUB_ACTOR}}
+          echo ${{GITHUB_REPOSITORY}}
